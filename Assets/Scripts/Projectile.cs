@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         StartCoroutine(SimulateProjectile());
-        //InvokeRepeating("SimulateProjectile", 1.0f, 1.0f);
+        
     }
 
 
@@ -28,8 +28,7 @@ public class Projectile : MonoBehaviour
         // Short delay added before Projectile is thrown
         yield return new WaitForSeconds(1.5f);
 
-        //GameObject spawnedSlamBall = Instantiate(slamBall, spawnPoint.position, spawnPoint.rotation);
-        //spawnedSlamBall.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, launchVelocity, 0));
+        
 
         // Move projectile to the position of throwing object + add some offset if needed.
         projectile.position = myTransform.position + new Vector3(0, 0.0f, 0);
