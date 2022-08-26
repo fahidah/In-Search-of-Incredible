@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3785156990751740839}
   - component: {fileID: 3785156990751740838}
   - component: {fileID: 3785156990751740837}
+  - component: {fileID: 423568143969074677}
   m_Layer: 0
   m_Name: SlamBall15
   m_TagString: Untagged
@@ -174,3 +175,15 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &423568143969074677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785156990751740835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1283ac0aab0523478df836a2c7cb386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
