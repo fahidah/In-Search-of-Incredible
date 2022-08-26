@@ -33,4 +33,5 @@ public class CoachController : MonoBehaviour
         spawnedSlamBall.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, height, forwardMovement));
         spawnedSlamBall.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();  
     }
+
 }
