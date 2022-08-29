@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CoachController : MonoBehaviour
 {
     // Variable Declaration
+
+    public TMP_Text scoreText;
 
     public GameObject slamBall; //weighted ball to be spawned
     public Transform playerPosition; //slamball destination
