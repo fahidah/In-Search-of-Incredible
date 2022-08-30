@@ -21,12 +21,13 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "Left Wall" || collision.gameObject.name == "Right Wall")
+        if (other.gameObject.tag == "Slam Ball")
         {
             score += 10;
             scoreText.text = "Score: " + score;
+            Destroy(other, 1.0f);
         }
     }
 }

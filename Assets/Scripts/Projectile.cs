@@ -5,6 +5,7 @@ using TMPro;
 
 public class Projectile : MonoBehaviour
 {
+
     void Start()
     { 
         
@@ -19,8 +20,5 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject, 1.0f);
         }
     }
-
-
-
 }
 

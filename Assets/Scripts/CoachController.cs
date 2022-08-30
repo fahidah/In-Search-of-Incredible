@@ -7,14 +7,12 @@ public class CoachController : MonoBehaviour
 {
     // Variable Declaration
 
-    public TMP_Text scoreText;
-
     public GameObject slamBall; //weighted ball to be spawned
     public Transform playerPosition; //slamball destination
     public Transform spawnPoint; //point where the slam balls will spawn
 
-    public float forwardMovement = 200.0f;
-    public float height = 300.0f;
+    public float forwardMovement = 210.0f;
+    public float height = 310.0f;
 
 
     // Start is called before the first frame update
