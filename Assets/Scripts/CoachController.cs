@@ -7,8 +7,8 @@ public class CoachController : MonoBehaviour
 {
     // Variable Declaration
 
+
     public GameObject slamBall; //weighted ball to be spawned
-    public Transform playerPosition; //slamball destination
     public Transform spawnPoint; //point where the slam balls will spawn
 
     public float forwardMovement = 210.0f;
@@ -21,13 +21,6 @@ public class CoachController : MonoBehaviour
         InvokeRepeating("ProjectileMovement", 1.0f, 1.5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-
     void ProjectileMovement()
     {
         GameObject spawnedSlamBall = Instantiate(slamBall, spawnPoint.position, spawnPoint.rotation);
@@ -35,4 +28,5 @@ public class CoachController : MonoBehaviour
         spawnedSlamBall.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();  
     }
 
+    
 }

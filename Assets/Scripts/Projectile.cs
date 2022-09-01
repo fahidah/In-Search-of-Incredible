@@ -6,18 +6,11 @@ using TMPro;
 public class Projectile : MonoBehaviour
 {
 
-    void Start()
-    { 
-        
-    }
-
-
-
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.name == "Floor")
         {
-            Destroy(gameObject, 1.0f);
+            Destroy(gameObject, .2f);
         }
     }
 }
