@@ -6,6 +6,8 @@ using TMPro;
 public class WallTrigger : MonoBehaviour
 {
     public ScoreManager scoreManager;
+    public CoachController coachController;
+
     public int wallPoints = 0;
 
     public TextMeshProUGUI scoreText;
